@@ -17,3 +17,5 @@ pip install django-uuslug<br/>
 python migrate.py makemigrations<br/>
 python migrate.py migrate <br/>
 python manage.py runserver<br/>
+
+![Image description](https://imgur.com/CM8myMA)
