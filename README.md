@@ -18,4 +18,4 @@ python migrate.py makemigrations<br/>
 python migrate.py migrate <br/>
 python manage.py runserver<br/>
 
-![Image description](https://imgur.com/CM8myMA)
+![Image description](https://i.ibb.co/12Ksdh6/blog.png)
