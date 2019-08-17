@@ -6,6 +6,7 @@
 2- bootstrap<br/>
 3- python/django(optional versions)<br/>
 
+# Settings
 
 pip install django<br/>
 pip install --upgrade setuptools<br/>
@@ -18,4 +19,6 @@ python migrate.py makemigrations<br/>
 python migrate.py migrate <br/>
 python manage.py runserver<br/>
 
-![Image description](https://i.ibb.co/12Ksdh6/blog.png)
+# Screenshot
+
+![Screenshot1](https://i.ibb.co/12Ksdh6/blog.png)
