@@ -1,0 +1,67 @@
+{% extends 'blog_templates/base.html' %}
+
+{% block title %}{{ page_title }} - {{ page_slogan }}{% endblock %}
+
+{% block home_page %}
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="site-heading">
+                    <h4>{{category_name}}</h4>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% if db %}
+            {% for i in db %}
+            <div class="post-preview">
+                <a href="/post/{{ i.seo_url }}">
+                    <h2 class="post-title">
+                        {{ i.title }}
+                    </h2>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Author{{ i.category_list_id_category_title }}</a> on {{ i.time }}</p>
+            </div>
+            <hr>
+            {% endfor %}
+
+            <!-- Pager -->
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                {% if db.has_previous %}
+                <li>
+                  <a href="?page={{ db.previous_page_number }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                {% endif %}
+                <li><a href="#">Page {{ db.number }} of {{ db.paginator.num_pages }}.</a></li>
+                {% if db.has_next %}
+                <li>
+                  <a href="?page={{ db.next_page_number }}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+                {% endif %}
+              </ul>
+            </nav>
+            <!-- !Pager -->
+            {% else %}
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> There were no results.
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

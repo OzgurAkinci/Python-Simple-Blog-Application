@@ -1,0 +1,51 @@
+body{
+  background: #fff!important;
+}
+p {
+margin-top:0px!important;
+margin-bottom:0px!important;
+}
+
+code {
+color:#111!important;
+padding-bottom:0px!important;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    padding-top:15px;
+}
+
+pre>p{
+  line-height:0px!important;
+}
+
+.navbar{
+  border-radius: 0px!important;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.navbar a{
+  color:#333!important;
+}
+
+.row-no-padding{
+    padding: 0 !important;
+}
+
+.nl>a{
+  display: pointer!important;
+}
+
+
+.post-title{
+  font-size:1.1em!important;
+}
