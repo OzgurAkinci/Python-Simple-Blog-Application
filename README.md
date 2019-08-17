@@ -10,7 +10,7 @@
 pip install django<br/>
 pip install --upgrade setuptools<br/>
 pip install django-ckeditor<br/>
-python -m pip install cx_Oracle --upgrade<br/>
+python -m pip install cx_Oracle --upgrade (if use oracle database)<br/>
 pip install django-uuslug<br/>
 
 
