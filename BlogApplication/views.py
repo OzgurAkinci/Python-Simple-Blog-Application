@@ -112,11 +112,12 @@ def SearchView(request):
         # If page is out of range (e.g. 9999), deliver last page of results.
         selected_posts = paginator.page(paginator.num_pages)
     #!Pagination
+    page_slogan = "Blog"
     context = {
     'db': selected_posts,
     'pages': pages,
     'categories' : categories,
     'page_title': q,
-    'page_slogan': q,
+    'page_slogan': page_slogan,
     }
     return render(request, 'Search.html', context)
