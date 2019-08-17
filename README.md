@@ -3,17 +3,17 @@
 <strong>Requirements</strong>
 
 1- uuslug - https://github.com/un33k/django-uuslug<br/>
-2- bootstrap
-3- python/django(optional versions)
+2- bootstrap<br/>
+3- python/django(optional versions)<br/>
 
 
-pip install django
-pip install --upgrade setuptools
-pip install django-ckeditor
-python -m pip install cx_Oracle --upgrade
-pip install django-uuslug
+pip install django<br/>
+pip install --upgrade setuptools<br/>
+pip install django-ckeditor<br/>
+python -m pip install cx_Oracle --upgrade<br/>
+pip install django-uuslug<br/>
 
 
-python migrate.py makemigrations
-python migrate.py migrate  
-python manage.py runserver
+python migrate.py makemigrations<br/>
+python migrate.py migrate <br/>
+python manage.py runserver<br/>
